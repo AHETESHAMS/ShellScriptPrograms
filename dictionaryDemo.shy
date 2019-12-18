@@ -1,0 +1,6 @@
+#!/bin/bash -x
+sound[Dog]="Bark"
+sound[Cow]="Moo"
+sound[Wolf]="Howl"
+sound[Bird]="Tweet"
+echo ${sound[Dog]}

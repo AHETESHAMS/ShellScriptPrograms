@@ -1,0 +1,17 @@
+#!/bin/bash
+absent=0
+partTime=1
+fullTime=2
+rateOfHr=20
+randomCheck=$(( RANDOM%3 ))
+if [ $randomCheck -eq $partTime ]
+then  
+   workHr=4
+elif [ $randomCheck -eq $fullTime ]
+then
+   workHr=8
+else
+   workHr=0
+
+
+
