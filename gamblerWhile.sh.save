@@ -1,0 +1,25 @@
+#!/bin/bash -x
+cash=100
+goal=200
+bet=20
+numberOfBets=0
+iterations=0
+while [[ $cash -gt 0 && $cash -lt $]] 
+do
+ randomCheck=$(( RANDOM%2 ))
+ if [ $randomCheck -eq 1 ]
+ then
+    cash=$(( $cash+$bet+20 ))
+    (( numberOfBets++ ))
+ else
+    cash=$(( $cash-$bet-20 )) 
+    (( numberOfBets++ ))
+ fi
+done
+if [ $cash -ge $goal ]
+then 
+   echo "You Won"
+else
+   echo "You Loose"
+fi
+echo "Number of Bets Are:-"$numberOfBets
